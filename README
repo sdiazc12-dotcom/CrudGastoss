@@ -1,0 +1,71 @@
+## CrudGastos
+
+Programa de consola en C# que administra gastos en SQL Server (LocalDB) con un CRUD completo: registrar, listar, buscar por Id, actualizar monto y eliminar. Todas las consultas son parametrizadas y las operaciones con la base están protegidas con try/catch.
+
+- *Curso:* Algoritmos (008), UMG Chiquimulilla
+- *Tarea:* CRUD de Gastos (Clase 12)
+- *Estudiante:* NOMBRE COMPLETO
+- *Carnet:* TU CARNET
+
+## Video explicativo
+
+Enlace público (Google Drive): PEGA_AQUI_EL_ENLACE_DEL_VIDEO
+
+
+## Menú
+
+1. Registrar gasto
+2. Listar gastos
+3. Buscar gasto por Id
+4. Actualizar monto
+5. Eliminar gasto
+6. Salir
+
+## Requisitos
+
+- Visual Studio Community 2026
+- SQL Server LocalDB ((localdb)\MSSQLLocalDB)
+- Paquete NuGet Microsoft.Data.SqlClient
+- Base de datos GastosDB con la tabla Gastos (script de la Clase 10), con 3 gastos iniciales de Id 1 a 3
+
+## Cómo ejecutarlo
+
+1. Clonar o descargar este repositorio.
+2. Abrir la solución en Visual Studio Community 2026.
+3. Verificar que GastosDB exista en LocalDB y tenga los 3 gastos iniciales.
+4. Presionar *F5* (con depuración) o *Ctrl+F5* (sin depuración).
+5. Elegir una opción del menú en la consola.
+
+## Escenarios probados
+
+### Escenario 1: buscar el gasto con Id 2 (opción 3)
+
+Resultado esperado: muestra Gasolina, Q 250.00, Transporte.
+
+
+### Escenario 2: buscar el Id 99 (opción 3)
+
+Resultado esperado: "No existe ese Id."
+
+
+### Escenario 3: actualizar el monto del Id 2 a 275.00 (opción 4) y listar
+
+Resultado esperado: "Gasto actualizado."; TOTAL GASTADO: Q 395.50
+
+
+### Escenario 4: eliminar el Id 3 (opción 5), listar y eliminar el Id 3 otra vez
+
+Resultado esperado: "Gasto eliminado."; TOTAL GASTADO: Q 320.50; después "No existe ese Id."
+
+
+### Escenario 5: nombre de base inexistente en la cadena de conexión y opción 2
+
+Resultado esperado: el programa no se cae; muestra "Error al listar: ..." y vuelve al menú.
+
+## Capturas
+
+![Captura 1](Capturas/Cap1.png)
+![Captura 2](Capturas/Cap2.png)
+![Captura 3](Capturas/Cap3.png)
+![Captura 4](Capturas/Cap4.png)
+![Captura 5](Capturas/Cap5.png)
