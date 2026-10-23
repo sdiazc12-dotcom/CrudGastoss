@@ -3,13 +3,12 @@
 Programa de consola en C# que administra gastos en SQL Server (LocalDB) con un CRUD completo: registrar, listar, buscar por Id, actualizar monto y eliminar. Todas las consultas son parametrizadas y las operaciones con la base están protegidas con try/catch.
 
 - *Curso:* Algoritmos (008), UMG Chiquimulilla
-- *Tarea:* CRUD de Gastos (Clase 12)
-- *Estudiante:* NOMBRE COMPLETO
-- *Carnet:* TU CARNET
+- *Estudiante:* Sergio Augusto Diaz Chacon
+- *Carnet:* 1790-26-20684
 
 ## Video explicativo
 
-Enlace público (Google Drive): PEGA_AQUI_EL_ENLACE_DEL_VIDEO
+https://drive.google.com/file/d/1Z-oIj1tLn-tR8369qwba_hOmKk7fK6L-/view?usp=sharing
 
 
 ## Menú
